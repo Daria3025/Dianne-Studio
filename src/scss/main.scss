@@ -1,2 +1,7 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
+@import "./variables/variables";
+@import "./base/base";
+@import "./elements/elements";
+@import "./blocks/blocks";
+@import "./sections/sections";
