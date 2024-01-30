@@ -23,6 +23,11 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.4"
   },
-  "browserslist": ["last 3 version"],
-  "type": "module"
+  "browserslist": [
+    "last 3 version"
+  ],
+  "type": "module",
+  "dependencies": {
+    "gulp-file-include": "^2.3.0"
+  }
 }

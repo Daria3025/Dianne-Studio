@@ -1,4 +1,4 @@
-@mixin font($font_type,$font_name, $font_weight, $weight, $style) {
+@mixin font($font_type,$font_name, $weight, $style) {
   @font-face {
     font-family: $font_name;
     font-display: swap;

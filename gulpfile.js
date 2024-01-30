@@ -8,12 +8,15 @@ import clean from "gulp-clean"; // для видалення папок або �
 import dartSass from "sass"; // біблиотека для компіляции SASS файлов для CSS
 import gulpSass from "gulp-sass"; // біблиотека для використання бібліотек SASS (пакет в пакете от Олі)
 const sass = gulpSass(dartSass); // компіляція стилів (SCSS в CSS)
+import fileInclude from 'gulp-file-include' // збірка частинок html
 
 import bsc from "browser-sync"; // бібліотека-сервер для перевірки вашого проекту
 const browserSync = bsc.create(); // визов бібліотеки-сервера
 
 const htmlTaskHandler = () => {
-	return src("./src/*.html").pipe(dest("./dist"));
+	return src("./src/*.html")
+		.pipe(fileInclude())
+		.pipe(dest("./dist"));
 };
 
 const cssTaskHandler = () => {
@@ -49,7 +52,7 @@ const browserSyncTaskHandler = () => {
 		}
 	});
 
-	watch("./src/scss/**/*.scss").on(
+	watch("./src/styles/**/*.scss").on(
 		"all",
 		series(cssTaskHandler, browserSync.reload)
 	);
