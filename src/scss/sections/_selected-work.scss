@@ -1,0 +1,405 @@
+.selected-work{
+  background: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .selected-work__header {
+    color: $header-color;
+    font-family: Gilroy-Regular;
+    font-size: 11.2vh;
+    letter-spacing: 0.45vw;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 92vw ;
+    margin: 0 auto;
+  }
+  .selected-work__example-work{
+    list-style: none;
+    margin: 0 auto;
+    width: 92vw;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    row-gap: 4vh;
+  }
+  .selected-work__work-show{
+    width: 29.3vw;
+    height: 29.3vw;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .work{
+    color: $black;
+    font-family: Gilroy-Bold;
+    font-size: 2.2vh;
+    line-height: 2.4vh;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .work__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.56vw;
+  }
+  .work__details-item{
+    display: flex;
+    column-gap: 1.68vh;
+  }
+  .work-show__category{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 1.5vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 13.1vw;
+    height: 2.9vh;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.7vh;
+    box-sizing: border-box;
+  }
+  .work-show__year{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 1.5vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 5.4vw;
+    height: 2.9vh;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.45vw;
+    box-sizing: border-box;
+  }
+  .selected-work__work-show-inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .selected-work__work-show-item-button{
+    width: 8.4vw;
+    height: 3.08vh;
+    display: flex;
+    background-color:$header-color;
+    border-radius: 2.6vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    & img{
+      width: 0.78vw;
+      height: 1.23vh;
+    }
+    & .selected-work__work-show-item-list
+    {
+      display: flex;
+      gap:0.52vw
+    }
+  }
+  .work-show__discover{
+    color:$white;
+    font-size:1.5vh;
+  }
+  .selected-work__work-show-item-subitem{
+    display: flex;
+    align-items: center;
+  }
+  .selected-work__all-works{
+    padding: 0.84vh 1.5vw;
+    background: $white;
+    display: inline-block;
+    color: $black;
+    font-family: Gilroy-Regular;
+    font-size:1.5vh;
+    border-radius: 2.6vh;
+    margin-top: 3.92vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .selected-work__header {
+    color: $header-color;
+    font-family: Gilroy-Regular;
+    font-size: 11.2vh;
+    letter-spacing: 0.45vw;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 83vw;
+    margin: 0 auto;
+  }
+  .selected-work__example-work{
+    list-style: none;
+    margin: 0 auto;
+    width: 92vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+  }
+  .selected-work__work-show{
+    width: 92vw;
+    height: 92vw;
+    box-sizing: border-box;
+    text-align: center;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .selected-work__work-show.trinity {
+    order:1;
+  }
+  .selected-work__work-show.work-text1{
+    height: 20vw;
+    order: 2;
+  }
+  .selected-work__work-show.morpheus{
+    order: 3;
+  }
+  .selected-work__work-show.work-text2{
+    height: 20vw;
+    order: 4;
+  }
+  .work{
+    color: $black;
+    font-family: Gilroy-Bold;
+    font-size: 6.2vh;
+    line-height: 2.4vh;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .work__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.56vw;
+  }
+  .work__details-item{
+    display: flex;
+    column-gap: 9.68vh;
+  }
+  .work-show__category{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 3.5vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 18vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .work-show__year{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 3.5vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 10vw;
+    height: 6vh;
+    padding-top: 0.45vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selected-work__work-show-inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .selected-work__work-show-item-button{
+    width: 15.4vw;
+    height: 6.08vh;
+    display: flex;
+    background-color:$header-color;
+    border-radius: 2.6vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    & img{
+      width: 1.78vw;
+      height: 3.23vh;
+    }
+    & .selected-work__work-show-item-list
+    {
+      display: flex;
+      gap:1.52vw
+    }
+  }
+  .work-show__discover{
+    color:$white;
+    font-size:3.5vh;
+  }
+  .selected-work__work-show-item-subitem{
+    display: flex;
+    align-items: center;
+  }
+  .selected-work__all-works{
+    padding: 0.84vh 1.5vw;
+    background: $white;
+    display: inline-block;
+    color: $black;
+    font-family: Gilroy-Regular;
+    font-size:3.5vh;
+    border-radius: 2.6vh;
+    margin-top: 3.92vh;
+  }
+}
+@media  (max-width: 768px){
+  .selected-work__header {
+    color: $header-color;
+    font-family: Gilroy-Regular;
+    font-size: 7.2vh;
+    letter-spacing: 0.45vw;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 83vw;
+    margin: 0 auto;
+  }
+  .selected-work__example-work{
+    list-style: none;
+    margin: 0 auto;
+    width: 92vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+  }
+  .selected-work__work-show{
+    width: 92vw;
+    height: 92vw;
+    box-sizing: border-box;
+    text-align: center;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .selected-work__work-show.trinity {
+    order:1;
+  }
+  .selected-work__work-show.work-text1{
+    height: 40vw;
+    order: 2;
+  }
+  .selected-work__work-show.morpheus{
+    order: 3;
+  }
+  .selected-work__work-show.work-text2{
+    height: 40vw;
+    order: 4;
+  }
+  .work{
+    color: $black;
+    font-family: Gilroy-Bold;
+    font-size: 4.2vh;
+    line-height: 2.4vh;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .work__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.56vw;
+  }
+  .work__details-item{
+    display: flex;
+    column-gap: 4.68vh;
+  }
+  .work-show__category{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 2vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 27vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .work-show__year{
+    font-family: Gilroy-Medium;
+    color:$header-color;
+    font-size: 2.5vh;
+    line-height: normal;
+    border-radius: 2.6vh;
+    background: $white;
+    text-decoration: none;
+    width: 17vw;
+    height: 6vh;
+    padding-top: 0.45vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selected-work__work-show-inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1vh;
+  }
+  .selected-work__work-show-item-button{
+    width: 44.8vw;
+    height: 6.08vh;
+    display: flex;
+    background-color:$header-color;
+    border-radius: 2.6vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    & img{
+      width: 5.78vw;
+      height: 2.23vh;
+    }
+    & .selected-work__work-show-item-list
+    {
+      display: flex;
+      gap:1.52vw
+    }
+  }
+  .work-show__discover{
+    color:$white;
+    font-size:3.5vh;
+  }
+  .selected-work__work-show-item-subitem{
+    display: flex;
+    align-items: center;
+  }
+  .selected-work__all-works{
+    width: 80vw;
+    background: $white;
+    display: inline-block;
+    color: $black;
+    font-family: Gilroy-Regular;
+    font-size:3.5vh;
+    border-radius: 2.6vh;
+    margin-top: 3.92vh;
+  }
+}

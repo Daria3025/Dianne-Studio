@@ -1,3 +1,5 @@
 @import "../mixins/font";
 
-@include font(Gilroy,Gilroy-Black,300,"normal");
+@include font(Gilroy,Gilroy-Regular,300,"normal");
+@include font(Gilroy,Gilroy-Medium,400,"normal");
+@include font(Gilroy,Gilroy-Bold,400,"normal");
